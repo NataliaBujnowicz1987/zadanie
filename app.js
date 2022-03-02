@@ -16,11 +16,6 @@ const updateData = () => {
     const dot2 = document.querySelector('.dot2');
     const dot3 = document.querySelector('.dot3');
 
-    // wersja 1 - źle zinterpretowane zadanie
-    // let i = Math.floor(Math.random() * 3);
-    // console.log(i)
-
-    // wersja 2. Zmiana przypisanej wartości zmiennej i od 0 do 2, żeby złapało dany element z tablicy
     let i = 0;
     setInterval(() => {
         if (i >= 2) {
@@ -86,7 +81,6 @@ const updateData = () => {
                 drawRate.textContent = res[i].primaryMarkets[0].selections[1].rate.decimal;
 
                 // count the total courses
-                // utknęłam z tym zadaniem, dlatego nie pobierałam danych dla 2 pozostałych wyników (remis + zwycięstwo gospodarzy)
                 const team1Away = res[0].primaryMarkets[0].selections[2].rate.decimal;
                 const team2Away = res[1].primaryMarkets[0].selections[2].rate.decimal;
                 const team3Away = res[2].primaryMarkets[0].selections[2].rate.decimal;
@@ -99,8 +93,6 @@ const updateData = () => {
     }, 3000)
 }
 
-// w momencie wywyłania setInterval poza funkcją, dane są wczytane odrazu, bez czekania 3sekund
-// setInterval(updateData, 3000);
 
 const activeBtn = () => {
     const btn = document.querySelectorAll('.results-btn');
