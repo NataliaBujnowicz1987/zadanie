@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5em;
+  color: white;
+  background-image: url(background.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.1em;
+  width: 100%;
+}
+
+section .dots {
+  position: absolute;
+  top: 38%;
+  right: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  width: 10vw;
+}
+
+section .dots div {
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+section .dots div.active {
+  background-color: #fff;
+}
+
+section .team {
+  font-weight: bold;
+  width: 200px;
+  padding: 0.5em;
+  text-align: center;
+  margin-top: 1em;
+}
+
+section .results-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+
+section .results-container .results-details {
+  background-color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+}
+
+section .results-container .results-details span {
+  font-size: 14px;
+  color: #000;
+}
+
+section .results-container .results-details span:last-child {
+  margin-left: 2em;
+}
+
+section .results-container .results-rates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em 0;
+}
+
+section .results-container .results-rates div {
+  width: 32%;
+  min-height: 150px;
+  background-color: #fff;
+  padding: 0.5em;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section .results-container .results-rates div:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+section .results-container .results-rates div.active {
+  background-color: rgba(15, 94, 15, 0.8);
+  border: 2px solid white;
+}
+
+section .results-container .results-rates div p {
+  color: #c9c7c7;
+  font-size: 15px;
+  margin-bottom: 0.5em;
+}
+
+section .results-container .results-rates div span {
+  color: #000;
+  font-size: 2.5em;
+}
+
+@media only screen and (max-width: 1025px) {
+  body {
+    padding: 2em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  section .dots {
+    top: 3%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: auto;
+  }
+  section .results-container {
+    width: 40%;
+    margin-top: 1em;
+  }
+  section .results-container .results-details {
+    text-align: center;
+  }
+  section .results-container .results-details span {
+    font-size: 12px;
+  }
+  section .results-container .results-details span:last-child {
+    margin-left: 0em;
+    margin-top: 0.5em;
+    display: block;
+  }
+  section .results-container .results-rates {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1em;
+  }
+  section .results-container .results-rates div {
+    width: 100%;
+    padding: 1em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0.5em;
+  }
+  section .dots {
+    top: 10%;
+    gap: 0.5em;
+  }
+  section .dots div {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+  }
+  section .results-container {
+    width: 70%;
+    margin-top: 4em;
+  }
+  section .results-container .results-rates div {
+    min-height: 100px;
+  }
+  section .results-container .results-rates div span {
+    font-size: 1.5em;
+  }
+  section .team {
+    position: absolute;
+    top: 0;
+    width: 40%;
+  }
+  section .team h2 {
+    font-size: 16px;
+    line-height: 1em;
+  }
+  section .team:nth-child(2) {
+    left: 0;
+  }
+  section .team:last-child {
+    right: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

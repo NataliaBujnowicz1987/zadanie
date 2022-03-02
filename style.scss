@@ -1,0 +1,203 @@
+$main-color: #fff;
+$accent-color: #000;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: $accent-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    color: white;
+    background-image: url(background.jpg);
+    background-size: cover;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+        background-color: rgba(0,0,0,0.4);
+        z-index: -1;
+    }
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1em;
+    width: 100%;
+    .dots {
+        position: absolute;
+        top: 38%;
+        right: 2%;
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        width: 10vw;
+        div {
+            background-color: transparent;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 3px solid $main-color;
+            &.active {
+                background-color: $main-color;
+            }
+        }
+    }
+    .team {
+        font-weight: bold;
+        width: 200px;
+        padding: 0.5em;
+        text-align: center;
+        margin-top: 1em;
+    }
+    .results-container {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        .results-details {
+            background-color: $main-color;
+            padding: 0.5em 1em;
+            border-radius: 10px;
+            span {
+                font-size: 14px;
+                color: $accent-color;
+                &:last-child {
+                    margin-left: 2em;
+                }
+            }
+        }
+        .results-rates {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1em 0;
+            div {
+                width: 32%;
+                min-height: 150px;
+                background-color: $main-color;
+                padding: 0.5em;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                   transform: scale(1.09);
+                }
+                &.active {
+                    background-color: rgba(15, 94, 15, 0.8);
+                    border: 2px solid white;
+                }
+                p {
+                    color: rgb(201, 199, 199);
+                    font-size: 15px;
+                    margin-bottom: 0.5em;
+                }
+                span {
+                    color: $accent-color;
+                    font-size: 2.5em;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE DESIGN
+@media only screen and (max-width: 1025px) {
+    body {
+        padding: 2em;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    section {
+        .dots {
+            top: 3%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: auto;
+        }
+        .results-container  {
+            width: 40%;
+            margin-top: 1em;
+            .results-details {
+                text-align: center;
+                span {
+                    font-size: 12px;
+                    &:last-child {
+                        margin-left: 0em;
+                        margin-top: 0.5em;
+                        display:block;
+                    }
+                }
+            }
+            .results-rates {
+                flex-direction: column;
+                gap: 1em;
+                div {
+                    width: 100%;
+                    padding: 1em;
+                }
+            }
+        }
+    }
+}
+
+ @media only screen and (max-width: 600px) {
+    body {
+        padding: 0.5em;
+    }
+    section {
+        .dots {
+            top: 10%;
+            gap: 0.5em;
+            div {
+                width: 15px;
+                height: 15px;
+                border: 1px solid $main-color;
+            }
+        }
+        .results-container {
+            width: 70%;
+            margin-top: 4em;
+            .results-rates div {
+                min-height: 100px;
+                span {
+                    font-size: 1.5em;
+                }
+            }
+        }
+        .team {
+            position: absolute;
+            top: 0;
+            width: 40%;
+            h2 {
+                font-size: 16px;
+                line-height: 1em;
+            }
+            &:nth-child(2){
+                left: 0;
+            }
+            &:last-child {
+                right: 0;
+            }
+        }
+    }
+ }

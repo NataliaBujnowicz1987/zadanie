@@ -1,0 +1,218 @@
+[
+  {
+    "date": "2021-08-28T16:30:00+00:00",
+    "id": 10396672,
+    "isLive": false,
+    "isPre": true,
+    "isSuspended": false,
+    "isVisible": true,
+    "marketsCount": 361,
+    "participants": {
+      "away": "Chelsea FC",
+      "home": "Liverpool FC"
+    },
+    "primaryMarkets": [
+      {
+        "id": 414603762,
+        "isSuspended": false,
+        "isVisible": true,
+        "label": "match-result",
+        "matchId": 10396672,
+        "name": "Zwyciezca meczu",
+        "selections": [
+          {
+            "id": 67423745456,
+            "isSuspended": false,
+            "name": "Liverpool FC",
+            "rate": {
+              "american": 155,
+              "decimal": 2.55,
+              "fractional": "14/9"
+            }
+          },
+          {
+            "id": 67423745455,
+            "isSuspended": false,
+            "name": "Remis",
+            "rate": {
+              "american": 230,
+              "decimal": 3.3,
+              "fractional": "23/10"
+            }
+          },
+          {
+            "id": 67423745454,
+            "isSuspended": false,
+            "name": "Chelsea FC",
+            "rate": {
+              "american": 190,
+              "decimal": 2.9,
+              "fractional": "19/10"
+            }
+          }
+        ]
+      }
+    ],
+    "sportsGroups": [
+      {
+        "id": 5,
+        "label": "football",
+        "name": "Pilka nozna"
+      },
+      {
+        "id": 474,
+        "label": "england",
+        "name": "Anglia"
+      },
+      {
+        "id": 754,
+        "label": "premier-league",
+        "name": "Premier League"
+      }
+    ]
+  },
+  {
+    "date": "2021-08-28T11:30:00+00:00",
+    "id": 10396680,
+    "isLive": false,
+    "isPre": true,
+    "isSuspended": false,
+    "isVisible": true,
+    "marketsCount": 377,
+    "participants": {
+      "away": "Arsenal FC",
+      "home": "Manchester City"
+    },
+    "primaryMarkets": [
+      {
+        "class": null,
+        "id": 414604602,
+        "isSuspended": false,
+        "isVisible": true,
+        "matchId": 10396680,
+        "name": "Zwyciezca meczu",
+        "selections": [
+          {
+            "id": 67423765053,
+            "isSuspended": false,
+            "name": "Manchester City",
+            "rate": {
+              "american": -400,
+              "decimal": 1.25,
+              "fractional": "1/4"
+            }
+          },
+          {
+            "id": 67423765052,
+            "isSuspended": false,
+            "name": "Remis",
+            "rate": {
+              "american": 550,
+              "decimal": 6.5,
+              "fractional": "11/2"
+            }
+          },
+          {
+            "id": 67423765051,
+            "isSuspended": false,
+            "name": "Arsenal FC",
+            "rate": {
+              "american": 1200,
+              "decimal": 13,
+              "fractional": "12"
+            }
+          }
+        ]
+      }
+    ],
+    "sportsGroups": [
+      {
+        "id": 5,
+        "label": "football",
+        "name": "Pilka nozna"
+      },
+      {
+        "id": 474,
+        "label": "england",
+        "name": "Anglia"
+      },
+      {
+        "id": 754,
+        "label": "premier-league",
+        "name": "Premier League"
+      }
+    ]
+  },
+  {
+    "date": "2021-08-28T14:00:00+00:00",
+    "id": 10396679,
+    "isLive": false,
+    "isPre": true,
+    "isSuspended": false,
+    "isVisible": true,
+    "marketsCount": 354,
+    "participants": {
+      "away": "Everton FC",
+      "home": "Brighton and Hove Albion"
+    },
+    "primaryMarkets": [
+      {
+        "class": null,
+        "id": 414605800,
+        "isSuspended": false,
+        "isVisible": true,
+        "matchId": 10396679,
+        "name": "Zwyciezca meczu",
+        "selections": [
+          {
+            "id": 67423809929,
+            "isSuspended": false,
+            "name": "Brighton and Hove Albion",
+            "rate": {
+              "american": 146,
+              "decimal": 2.45,
+              "fractional": "13/9"
+            }
+          },
+          {
+            "id": 67423809928,
+            "isSuspended": false,
+            "name": "Remis",
+            "rate": {
+              "american": 221,
+              "decimal": 3.2,
+              "fractional": "11/5"
+            }
+          },
+          {
+            "id": 67423809927,
+            "isSuspended": false,
+            "name": "Everton FC",
+            "rate": {
+              "american": 210,
+              "decimal": 3.1,
+              "fractional": "21/10"
+            }
+          }
+        ]
+      }
+    ],
+    "sportsGroups": [
+      {
+        "id": 5,
+        "label": "football",
+        "name": "Pilka nozna"
+      },
+      {
+        "id": 474,
+        "label": "england",
+        "name": "Anglia"
+      },
+      {
+        "id": 754,
+        "label": "premier-league",
+        "name": "Premier League"
+      }
+    ]
+  }
+]
